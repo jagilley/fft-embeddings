@@ -126,7 +126,9 @@ env/
 venv/
 ENV/
 env.bak/
+.DS_Store
 venv.bak/
+*.pkl
 
 # Spyder project settings
 .spyderproject
