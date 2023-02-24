@@ -44,6 +44,7 @@ print(embeddings.shape)
 
 # get spectrogram for each channel
 for i in range(0, 1):
+    # continue
     channel_0 = embeddings[:, i]
 
     # Plot channel 0
@@ -72,6 +73,8 @@ for i in range(0, 1):
     # # save audio
     # sf.write(f'audio_{i}.wav', audio, 22050)
 
+# get spectrogram for all channels
+spec = np.abs(librosa.stft(embeddings, n_fft=32, win_length=4))
 
 import code
-# code.interact(local=locals())
+code.interact(local=locals())
