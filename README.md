@@ -9,7 +9,7 @@ from the time domain to the frequency domain and back again, this time with text
 
 ## results
 
-sliced + fft'ed + lowpass'ed + istft'ed embeddings perform better than both openai's embeddings for the whole text and un-lowpass'ed sliced embeddings on the toy classification task in `clf_test.ipynb`:
+sliced + fft'ed + lowpass'ed + istft'ed embeddings perform better than both openai's embeddings for the whole text and un-lowpass'ed sliced embeddings on the toy classification task in `clf_demo.ipynb`:
 - get embeddings for whole text: 97.1% accuracy
 - sliding window without lowpass filter: 96% accuracy
 - sliding window with lowpass filter @ 0.5: **97.6% accuracy**
