@@ -1,6 +1,8 @@
 # fft-embeddings
 from the time domain to the frequency domain and back again, this time with text embeddings!
 
+or, doing AI with [librosa](https://librosa.org/doc/latest/index.html)
+
 ## what this repo does:
 1. split a large corpus of text into overlapping segments (see `split_utils.split_text()`)
 1. transpose the resulting time-domain embeddings (that is, a list of embeddings representing the sequential pieces of text) into the frequency domain with librosa's FFT implementation
@@ -18,3 +20,8 @@ sliced + fft'ed + lowpass'ed + istft'ed embeddings perform better than both open
 
 spectrogram for channel 5 of openai's embeddings on the Gettysburg Address:
 ![spectro_5](spectro_5.png)
+
+## todo
+- explore frequency-domain "timbre"-based methods of performing nearest neighbors search
+- explore other spectral noise filtering implementations (adaptive filtering? is the noise static in this case?)
+- explore performance gains on other types of embeddings
