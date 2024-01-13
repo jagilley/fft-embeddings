@@ -3,6 +3,8 @@ from the time domain to the frequency domain and back again, this time with text
 
 or, doing AI with [librosa](https://librosa.org/doc/latest/index.html)
 
+read the full paper [here](https://jagilley.github.io/fft-embed.html)
+
 ## what this repo does:
 1. split a large corpus of text into overlapping segments (see `split_utils.split_text()`)
 1. transpose the resulting time-domain embeddings (that is, a list of embeddings representing the sequential pieces of text) into the frequency domain with librosa's FFT implementation
